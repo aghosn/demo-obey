@@ -11,6 +11,6 @@ object build extends Build {
   lazy val core = Project(
     id = "core",
     base = file("core"),
-    settings = sharedSettings ++ commonDependencies ++ Seq(obeyplugin.obeyFix += "+{List*}")) enablePlugins(obeyplugin)
+    settings = sharedSettings ++ commonDependencies ++ Seq(obeyplugin.obeyWarn += "+{Type}")) enablePlugins(obeyplugin)
 
 }
