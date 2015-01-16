@@ -5,7 +5,7 @@ object Demo {
   def badUnit { 
     println("Hello World!")
   }
-  def bar(arg: String, more: String*) {
+  def bar(arg: String) {
     println("Hello "+arg)
   } 
   var legal = "shouldn't be modified"
